@@ -17,10 +17,5 @@ def upgradeCost(levels: int = 1):
     """
     return round(100*(1.0618*levels))
 
-# no
-# well 100 * 1.0618 = 106.18
-# what section
-# 100+(1,0618*levels)) did you just delete an entire section the upgradecost one what does the line mean?
-#oh okay good
 print(getWeaponDamage('Soulstealer Greatsword', 113))
 print(upgradeCost(10))
