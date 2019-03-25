@@ -1,18 +1,26 @@
-a: int = 52
-upgradesApplied: int = 1
+weapons = {
+    'Soulstealer Greatsword': {
+        'base_damage': 3599,
+        'max_upgrades': 338
+    }
+}
 
-userInput = input('Your item\'s damage can be increased by ')
-try:
-    int(userInput)
-except ValueError as error:
-    print('Input must be an integer.')
+def getWeaponDamage(item: str, levels: int = 1):
+    """ Calculate weapon damage at set specific level.
+    """
+    _baseDamage: int = weapons[item]['base_damage']
+    _maxUpgrades: int = weapons[item]['max_upgrades']
+    return round(_baseDamage+(10*levels))
 
-for i in range(int(userInput)):
-    b = a * 0.05
-    if b >= 10:
-        b = 10
-    a += b
-a: int = round(a)
-print(a)
+def upgradeCost(levels: int = 1):
+    """ Calculate the cost to upgrade an item per level.
+    """
+    return round(100*(1.0618*levels))
 
-# cd /home/liam/git/dungeonquest && git add . && git commit -m"Initial commit." && git push origin master
+# no
+# well 100 * 1.0618 = 106.18
+# what section
+# 100+(1,0618*levels)) did you just delete an entire section the upgradecost one what does the line mean?
+#oh okay good
+print(getWeaponDamage('Soulstealer Greatsword', 113))
+print(upgradeCost(10))
