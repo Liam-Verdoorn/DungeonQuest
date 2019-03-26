@@ -15,12 +15,8 @@ def getWeaponDamage(item: str, levels: int = 1):
 def upgradeCost(levels: int = 1):
     """ Calculate the cost to upgrade an item per level.
     """
-    return round(100*(1.0618*levels))
+    return round(100*(0.838*levels))
 
-# no
-# well 100 * 1.0618 = 106.18
-# what section
-# 100+(1,0618*levels)) did you just delete an entire section the upgradecost one what does the line mean?
-#oh okay good
+
 print(getWeaponDamage('Soulstealer Greatsword', 113))
 print(upgradeCost(10))
