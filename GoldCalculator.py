@@ -1,4 +1,4 @@
-#def values[] # adding later
+#def values[]
 baseCost = 100
 firstUpgrade = 56
 totalCost = 0
