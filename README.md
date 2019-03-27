@@ -1,1 +1,1 @@
-# DungeonQuest gold and stat calculator
+# DungeonQuest gold(not fully functional) and stat calculator (functional)
