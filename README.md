@@ -1,1 +1,1 @@
-# DungeonQuest
+# DungeonQuest gold and stat calculator
